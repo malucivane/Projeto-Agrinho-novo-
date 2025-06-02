@@ -1,0 +1,131 @@
+/* style.css */
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #fdf6f0;
+  color: #4d4b4b;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* textura suave */
+}
+
+header {
+  background: linear-gradient(135deg, #f8cdda 0%, #f0e2b6 100%);
+  padding: 30px;
+  text-align: center;
+  border-bottom: 5px solid #e1a4b3;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #5b3b2c;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fffefc;
+  border: 2px solid #e1a4b3;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: slideUp 1s ease forwards;
+}
+
+.historia, .amizade {
+  background: rgba(255, 239, 213, 0.6);
+}
+
+.galeria {
+  text-align: center;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.fotos img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: 3px solid #e1a4b3;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease;
+}
+
+.fotos img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+footer {
+  background: linear-gradient(135deg, #f8cdda 0%, #f0e2b6 100%);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 5px solid #e1a4b3;
+  font-style: italic;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.video {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.video video, .video iframe {
+  border-radius: 15px;
+  border: 3px solid #e1a4b3;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  animation: fadeIn 2s ease-in-out;
+}
+.video {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.play-icon {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.play-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.video-container {
+  display: none;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.video-container video {
+  border: 3px solid #e1a4b3;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Animação opcional */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
